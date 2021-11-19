@@ -25,10 +25,10 @@ export default function Home({cartao}) {
           <option value="comunicacao">Comunicação</option>
           <option value="producao de videos">Produção de videos</option>
           <option value="manutencao">Manutenção</option>
-          <option value="alao de beleza">Salão de Beleza</option>
+          <option value="salao de beleza">Salão de Beleza</option>
           <option value="Venda e Revenda de doces">Venda e Revenda de doces</option>
           <option value="Distribuidora de Balas e artigos para festas">Distribuidora de Balas e artigos para festas</option>
-          <option value="Corte e Custura">Corte e Custura</option>
+          <option value="Corte e Costura">Corte e Costura</option>
         </select>
        </div> 
       </header>
