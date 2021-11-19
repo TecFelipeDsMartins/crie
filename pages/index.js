@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Card from '../components/Card'
 import Prismic from 'prismic-javascript'
+import { useState } from 'react'
 import styles from '../styles/Home.module.css'
 
 export default function Home({cartao}) {
+  const [category, setCategory] = useState('Todas')
+
   return (
     <>
       <Head>
@@ -14,26 +17,45 @@ export default function Home({cartao}) {
        </div>
        <div className="md:w-1/2 flex flex-col justify-center items-center relative top-32 md:-top-8">
         <h1 className="text-xl text-gray-600 pb-3">Buscar empresa por categoria</h1>
-        <select className="w-72 text-base" name="empresas" id="emp">
-          <option value="Todas">Todas</option>
-          <option value="limpeza">Limpeza</option>
+        <select className="w-72 text-base" name="empresas" id="emp"
+          onChange={(e) => setCategory(e.target.value)}>
+          <option selected value="Todas">Todas</option>
           <option value="saude">Saúde</option>
-          <option value="comunicação">Comunicação</option>
-          <option value="contabilidade">Financeiro</option>
+          <option value="locucao">Locução</option>
+          <option value="comunicacao">Comunicação</option>
+          <option value="producao de videos">Produção de videos</option>
+          <option value="manutencao">Manutenção</option>
+          <option value="alao de beleza">Salão de Beleza</option>
+          <option value="Venda e Revenda de doces">Venda e Revenda de doces</option>
+          <option value="Distribuidora de Balas e artigos para festas">Distribuidora de Balas e artigos para festas</option>
+          <option value="Corte e Custura">Corte e Custura</option>
         </select>
        </div> 
       </header>
       <div className="h-auto w-full flex flex-col justify-center items-center" >
-        {cartao.map(card => (
+        {cartao.map(card => ( 
+        card.data.category === category ?
         <Card 
           key={card.data.id}
           image={card.data.image.url}
-          category={card.data.category}
+          desc={card.data.desc}
           name={card.data.name}
           text={card.data.text}
           link={card.data.link}
         />
+        : category === 'Todas' ?
+        <Card 
+          key={card.data.id}
+          image={card.data.image.url}
+          desc={card.data.desc}
+          name={card.data.name}
+          text={card.data.text}
+          link={card.data.link}
+        />
+        : null
         ))}
+         
+       
       </div> 
     </>
   )
