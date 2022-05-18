@@ -23,6 +23,7 @@ export default function Home({cartao}) {
           onChange={(e) => setCategory(e.target.value)}>
           <option selected value="Todas">Todas</option>
           <option value="saude">Saúde</option>
+          <option value="consultoria">Consultoria</option>
           <option value="locucao">Locução</option>
           <option value="comunicacao">Comunicação</option>
           <option value="producao de videos">Produção de videos</option>
