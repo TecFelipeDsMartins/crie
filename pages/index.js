@@ -58,9 +58,12 @@ export default function Home({cartao}) {
         />
         : null
         ))}
-         
-       
-      </div> 
+      </div>
+      <footer className=" text-center" >
+          <cite>Desenvolvido por</cite>
+          <br />
+          <a className="text-blue-400"  href="https://fdsm.vercel.app/">FDSM WEB DEVELOPER</a>
+      </footer> 
     </>
   )
 }
