@@ -59,7 +59,7 @@ export default function Home({cartao}) {
         : null
         ))}
       </div>
-      <footer className=" text-center" >
+      <footer className="text-center p-3" >
           <cite>Desenvolvido por</cite>
           <br />
           <a className="text-blue-400"  href="https://fdsm.vercel.app/">FDSM WEB DEVELOPER</a>
