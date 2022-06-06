@@ -24,6 +24,7 @@ export default function Home({cartao}) {
           <option selected value="Todas">Todas</option>
           <option value="saude">Saúde</option>
           <option value="consultoria">Consultoria</option>
+          <option value="certificados">Certificados</option>
           <option value="locucao">Locução</option>
           <option value="comunicacao">Comunicação</option>
           <option value="producao de videos">Produção de videos</option>
