@@ -11,7 +11,7 @@ export default function Home({cartao}) {
     <>
       <Head>
         <title>Empresas Crie</title>
-        <meta name="description" content="Este o Empresas Crie, um site catálogo de empreendedores cristãos. Aqui você encontrará muitos profissionais de diferentes áreas de atuação" />
+        <meta name="descriptiodescriptiondescriptiodescriptionndescriptiodescriptionnn" content="Este o Empresas Crie, um site catálogo de empreendedores cristãos. Aqui você encontrará muitos profissionais de diferentes áreas de atuação" />
       </Head>
       <header className="bg-header-patern bg-no-repeat md:bg-fixed bg-top md:bg-center bg-cover md:h-auto h-40 md:w-full flex md:flex-row flex-col justify-center items-center md:mb-9 mb-36 " >
        <div className="w-1/2 h-40 md:h-96 md:mb-20">
