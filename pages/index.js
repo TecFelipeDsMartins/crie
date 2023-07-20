@@ -21,7 +21,8 @@ export default function Home({cartao}) {
         <h2 className="text-xl text-gray-600 pb-3">Buscar empresa por categoria</h2>
         <select className="w-72 text-base" name="empresas" id="emp"
           onChange={(e) => setCategory(e.target.value)}>
-          <option selected value="Todas">Todas</option>
+          <option selected value="Todas">Todas</option>  
+          <option selected value="Todas">Segurança</option>
           <option value="saude">Saúde</option>
           <option value="consultoria">Consultoria</option>
           <option value="certificados">Certificados</option>
