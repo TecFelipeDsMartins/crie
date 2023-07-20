@@ -22,7 +22,7 @@ export default function Home({cartao}) {
         <select className="w-72 text-base" name="empresas" id="emp"
           onChange={(e) => setCategory(e.target.value)}>
           <option selected value="Todas">Todas</option>  
-          <option value="segurança">Segurança</option>
+          <option value="segurança">Segurança do Trabalho</option>
           <option value="saude">Saúde</option>
           <option value="consultoria">Consultoria</option>
           <option value="certificados">Certificados</option>
